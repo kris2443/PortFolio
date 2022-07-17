@@ -3,25 +3,29 @@
     padding: 0%;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-}
 
 /* Navbar Styling */
 .header{
     width: 100%;
     position: fixed;
+    /* background-color: crimson; */
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header .logo a{
     font-weight: 800px;
+    font-size: 35px;
 }
 
-.navbar {
-    background-color: crimson;
+.header .logo a span{
+    color: crimson;
+}
+
+.header .navbar {
     display: flex;
-    padding: 15px 80px;
+    /* padding: 15px 80px; */
     justify-content: space-between;
     align-items: center;
 }
@@ -36,6 +40,59 @@ body{
     font-size: 20px;
     color: #fff;
     text-decoration: none;
+    transition: color 0.4s;
+}
+
+.header a:hover{
+    color: crimson;
 }
 
 /* Home */
+.home{
+    display: flex;
+    background: url('https://images.pexels.com/photos/4246792/pexels-photo-4246792.jpeg?cs=srgb&dl=pexels-laura-garcia-4246792.jpg&fm=jpg');
+     height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    color: black;
+}
+
+.home .navbar{
+    color: #fff;
+    margin: auto 0px auto 50px;
+}
+
+.home .navbar .text-1{
+    font-size: 23px;
+}
+
+.home .navbar .text-2{
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+.home .navbar .text-3{
+    font-size: 35px;
+}
+
+.home .navbar .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+
+.home .navbar  .btn{
+    border-radius: 10px;
+    background-color: crimson;
+    outline: none;
+    border: none;
+}
+
+.home .navbar  .btn a{
+    display: inline-block;
+    font-size: 16px;
+    padding: 0.7rem;
+    color: #fff;
+    text-decoration: none;
+}
