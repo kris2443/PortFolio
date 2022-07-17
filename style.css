@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Poppins:ital,wght@0,200;1,200;1,300&family=Roboto:ital,wght@0,400;1,300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Poppins:ital,wght@0,200;1,200;1,300&family=Roboto:ital,wght@0,400;1,300&display=swap');*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Styling */
+.header{
+    width: 100%;
+    position: fixed;
+}
+
+.header .logo a{
+    font-weight: 800px;
+}
+
+.navbar {
+    background-color: crimson;
+    display: flex;
+    padding: 15px 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menu-items li{
+    display: inline-block;
+    list-style: none;    
+}
+
+.header a{
+    margin-left: 50px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Home */
