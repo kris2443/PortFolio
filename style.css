@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+/* Crimson Text Color */
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.crimson {
+    color: crimson;
+}
+
+/* Background Color */
+.bc-color{
+    background-color: crimson;
+}
+
 /* Navbar Styling */
 .header{
     width: 100%;
@@ -14,22 +30,28 @@
     transition:  all 0.4s ease;
 }
 
+.container{
+    /* border: 2px solid black; */
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    /* overflow: hidden; */
+
+}
+
 /* should not space  */
 .header.sticky{
     padding: 10px 0px;
     background-color: crimson;
 }
 
-/* .header .sticky .logo span{
-    color: black;
-} */
 .header .logo a{
     font-weight: 800px;
     font-size: 35px;
 }
 
-.header .logo a span{
-    color: crimson;
+.header.sticky a:hover , .header.sticky a span{
+    color: #fff;
 }
 
 .header .navbar {
@@ -59,14 +81,15 @@
 /* Home */
 .home{
     display: flex;
-    background: url('https://images.pexels.com/photos/4246792/pexels-photo-4246792.jpeg?cs=srgb&dl=pexels-laura-garcia-4246792.jpg&fm=jpg');
-     height: 100vh;
+    background: url('https://images.pexels.com/photos/12640456/pexels-photo-12640456.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
     background-size: cover;
     background-position: center;
+    min-height: 95vh;
     background-repeat: no-repeat;
-    min-height: 600px;
+    /* min-height: 600px; */
     color: black;
 }
+
 
 .home .navbar{
     color: #fff;
@@ -86,23 +109,196 @@
     font-size: 35px;
 }
 
-.home .navbar .text-3 span{
-    color: crimson;
-    font-weight: 500;
+.home .navbar .text-3 .auto-text{
+    font-weight:600;
+    font-size: 34px;
+    font-style: bolder;
 }
 
 .home .navbar  .btn{
-    border-radius: 10px;
-    background-color: crimson;
+    border-radius: 20px;
     outline: none;
     border: none;
 }
+
 
 .home .navbar  .btn a{
     display: inline-block;
     font-size: 16px;
     padding: 0.7rem;
-    color: #fff;
+    /* color: #fff; */
+    color: crimson;
     text-decoration: none;
+}
+
+/* Button Styling */
+
+.fa-bars{
+    font-size: 34px;
+    display: none;
+}
+
+@media (max-width : 1075px) {
+    .fa-bars{
+        display: block;
+        color: #fff;
+    }
+
+}
+
+
+/* About Section */
+
+#about {
+    background-color: #fff;
+    margin-top: 1.7rem;
+}
+
+.nav{
+    text-align: center;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav #aboutMe{
+    font-size: 2rem;
+}
+
+
+
+/* Left Image */
+
+
+.leftImage{
+    display: flex;
+    margin: 2rem 0px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.container .container2{
+    height: 250px;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    width: 100%;
+}
+
+.container2 .Image{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.container .Image img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    object-fit: cover;
+}
+
+.container #text-image{
+    float: right;
+    width: 50%;
+    padding:3rem;
+}
+
+.leftImage .intro{
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-style: bolder;
+}
+
+
+
+.leftImage .introtext{
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+}
+
+.container2  a{
+    /* display: inline-block; */
+    text-decoration: none;
+    padding: 0.3rem 0.9rem; 
+    border-radius: 20px;
+    color: crimson;
+    outline: none;
+    border: 2px solid crimson;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-style: bolder;
+}
+
+
+/* Services */
+
+#boxes{
+    margin-top: 4rem;
+    background-color: black;
+}
+
+.MyServices{
+    width: 400px;
+    margin: 0px auto;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-style: bolder;
+}
+
+.MyServices :nth-child(1){
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.MyServices :nth-child(2){
+    font-size: 1rem;
+}
+
+
+
+.Threeboxes{
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 3rem; */
+    margin-top: 3rem;
+    padding: 3rem;
+}
+
+/* Font Design */
+.fa-solid{
+    font-size: 2rem;
+    line-height: 1rem;
+    padding: 1rem 0rem;
+}
+
+.Threeboxes .box-1{
+    max-width: 300px;
+    text-align: center;
+    padding-top: 1rem;    
+    height: 150px;
+    /* background-color: rgba(102, 102, 102, 0); */
+    background-color: 	#3b3c36;
+}
+
+.Threeboxes .box-2{
+    padding-top: 1rem;    
+    max-width: 300px;
+    background-color: 	#3b3c36;
+    text-align: center;
+    height: 150px;
+}
+
+.Threeboxes .box-3{
+    padding-top: 1rem;    
+    background-color: 	#3b3c36;
+    max-width: 300px;
+    text-align: center;
+    height: 150px;
 }
 
